@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "fsctf9k8",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "WebriQ Sandbox",
+    "basePath": "/"
+  },
+  "__experimental_spaces": [
+    {
+      "name": "webriqsandbox",
+      "title": "WebriQ Sandbox",
+      "default": true,
+      "api": {
+        "projectId": "fsctf9k8",
+        "dataset": "production"
+      }
+    }
+  ],
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schemas.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    }
+  ]
+}
